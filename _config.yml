@@ -1,16 +1,14 @@
-site: Sidey
-url: #yoururl
+site: szlent's blog
+url: undersilence.github.io
 title: Sidey
 description: Simple and minimalistic jekyll blogging theme.
 author:
-  twitter: #yourusername
-  name: #yourusername
-  avatar:
-  email: #youremail
-  url: #yoururl
+  name: szlent
+  email: undersilence@qq.com
+  url: undersilence.github.io
 permalink: pretty
 
-baseurl: ""
+baseurl: "undersilence.github.io"
 
 # Conversion
 markdown:    kramdown
@@ -19,7 +17,8 @@ highlighter: rouge
 # Markdown Processors
 kramdown:
   input: GFM
-  auto_ids: true  
+  auto_ids: true
+  math_engine: mathjax
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     span:

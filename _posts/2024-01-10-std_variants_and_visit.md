@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "简易实现 std::variants & std::visit"
+title:  "简明实现 std::variants & std::visit"
 date:   2023-01-10
 last_modified_at: 2023-01-10
-tag: [Cpp_Dev]
+tag: [CppDevelop]
 mathjax: true
 ---
 
