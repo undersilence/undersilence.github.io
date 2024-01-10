@@ -25,7 +25,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: false
 
 exclude:
   - .jekyll-cache
@@ -69,3 +69,10 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+gittalk:
+  clientID: 6ef58bbbe28ef2cf95c1 # GitHub Application Client ID
+  clientSecret: 32b87abd104f15768e1db0691386ccc8402c9ea8  # GitHub Application Client Secret,
+  repository: undersilence.github.io  # Storage gittalk's repository
+  owner: undersilence  # GitHub repo owner,
+  admin: undersilence  # GitHub repo owner and collaborators, only these guys can initialize github issues eg. 'colynn,daattali'

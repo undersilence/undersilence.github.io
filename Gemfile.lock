@@ -10,8 +10,10 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.16.3)
+    ffi (1.16.3-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.1)
+    google-protobuf (3.25.1-x64-mingw-ucrt)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
@@ -68,6 +70,8 @@ GEM
       google-protobuf (~> 3.25)
     sass-embedded (1.69.7-arm64-darwin)
       google-protobuf (~> 3.25)
+    sass-embedded (1.69.7-x64-mingw-ucrt)
+      google-protobuf (~> 3.25)
     sass-embedded (1.69.7-x86-linux-android)
       google-protobuf (~> 3.25)
     sass-embedded (1.69.7-x86_64-linux-android)
@@ -83,6 +87,7 @@ PLATFORMS
   arm-linux-gnueabihf
   arm-linux-musleabihf
   arm64-darwin-23
+  x64-mingw-ucrt
   x86-linux-android
   x86_64-linux-android
 
@@ -93,4 +98,4 @@ DEPENDENCIES
   jekyll-sitemap
 
 BUNDLED WITH
-   2.5.3
+   2.5.4
