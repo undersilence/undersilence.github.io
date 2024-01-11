@@ -2,10 +2,37 @@
 layout: post
 title:  "简明实现 std::variants & std::visit"
 date:   2023-01-10
-last_modified_at: 2023-01-10
+last_modified_at: 2023-01-11
 tag: [CppDevelop]
 mathjax: true
 ---
+`cpp17` 标准中引入了 `std::variants` ，提供了类型安全的union，可以用来替代 C 编程中常用的 `tagged union` 技术。类内部会存一个枚举值代表内部的实际类型，使用时根据枚举值进行不同的逻辑处理，差不多这样：
+```c
+struct Fruit {
+  enum FruitType { 
+    type_apple, 
+    type_banana, 
+    type_cherry
+  } type;
+
+  union {
+    Apple apple;
+    Banana banana;
+    Peach type_cherry;
+  }
+};
+
+//...when using it
+switch (fruit.type) {
+  case type_apple:
+    // ... 
+  case type_banana:
+    // ...
+  case type_cherry:
+  // ...
+}
+```
+可以方便的定义该类型为`std::variant<Apple,Banana,Cherry>`并配套使用`std::visit`根据类型进行模式匹配。
 
 ```cpp
 #include <algorithm>
